@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+      <title>Fortune Reader</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="https://substackcdn.com/image/fetch/$s_!w2ph!,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Frecordcrash.substack.com%2Fapi%2Fv1%2Fpost_preview%2F41062828%2Ftwitter.jpg%3Fversion%3D4" alt="fortune teller" width="400" height="400"/>
+    <!-- this is the start of content -->
+    <h1>
+      Fortune Reader
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="Firstname">Name:</label>
+      <input type="text" id="Firstname" name="name1" placeholder="First Name" required>
+      <label for="lastName">Name:</label>
+      <input type="text" id="LastName" name="name2" placeholder="Last  Name" required>
+      <br><br>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br><br>
+      <label for="color">Favorite Color: </label>
+     <select name="color" id="color">
+        <option value="gold">gold</option>
+        <option value="silver">silver</option>
+        <option value="bronze">bronze</option>
+        <option value="iron">iron</option>
+      </select>
+      <br>
+      <label for="message">How are you feeling right now?:</label>
+      <textarea name="message" id="message" placeholder="Alright"></textarea>
+      <br>
+      <p> What hand do you write with?</p>
+      <label for="hand-left">Left</label>
+      <input type="radio" id="hand-left" name="hand" value="left">
+      <label for="hand-right">Right</label>
+      <input type="radio" id="hand-right" name="hand" value="right">
+      <br> 
+      <p> Are you Male or Female?</p>
+      <label for="gender-male"> Male</label> 
+      <input type="radio" id="gender-male" name="gender" value="male">
+      <label for="gender-female">Female</label>
+      <input type="radio" id="gender-female" name="gender" value="female">
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
