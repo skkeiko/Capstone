@@ -1,0 +1,11 @@
+div{
+    width:50px;
+    height:50px;
+    background-color:black;
+}
+
+#pupils{
+    background-color:black;
+    position:relative;
+    top:50px;
+}
